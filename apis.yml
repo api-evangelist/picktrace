@@ -1,7 +1,23 @@
 aid: picktrace
-name: Picktrace
-description: Picktrace is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: PickTrace
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+description: >-
+  PickTrace is an agricultural workforce and harvest management SaaS platform
+  for large-scale farms, founded by brothers Austin and Harrison Steed and a
+  Y Combinator (Summer 2015) alumnus headquartered in Glendale, California. The
+  platform captures time-and-attendance, piecework, productivity, onboarding,
+  payroll, and receiving data in the field, office, and packinghouse, giving
+  growers real-time visibility across their entire workforce year-round. It is
+  used daily by tens of thousands of farm workers at some of the largest berry,
+  citrus, and apple growers in the United States, Mexico, Peru, Chile, and
+  Australia. PickTrace exposes a RESTful API that lets customers and third-party
+  developers create, update, and extract objects from all PickTrace tools and
+  bi-directionally sync labor data into and out of the platform for automation,
+  payroll efficiency, and audit-ready compliance.
 url: https://raw.githubusercontent.com/api-evangelist/picktrace/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +25,69 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://picktrace.com/wp-content/uploads/2019/03/cropped-agriberries_postArtboard-15favicon3-270x270.png
 tags:
 - Company
-apis: []
+- Agriculture
+- AgTech
+- Workforce Management
+- Labor Tracking
+- Farm Management
+- Harvest Management
+- Time Tracking
+- Payroll
+- Piecework
+- API
+apis:
+- name: PickTrace API
+  description: >-
+    RESTful API for integrating labor and workforce-management data into and out
+    of the PickTrace platform. Customers and third-party developers use it to
+    create, update, and extract objects from all PickTrace tools with
+    bi-directional syncing. Access and documentation are provided through
+    PickTrace's integration consultation team; no public OpenAPI specification is
+    published.
+  humanURL: https://picktrace.com/api/
+  properties:
+  - type: DeveloperPortal
+    url: https://picktrace.com/api/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/picktrace-domain-security.yml
+- type: Website
+  url: https://picktrace.com/
+- type: DeveloperPortal
+  url: https://picktrace.com/api/
+- type: Support
+  url: https://picktraceinc.zendesk.com/hc/en-us
+- type: Blog
+  url: https://picktrace.com/blog
+- type: PrivacyPolicy
+  url: https://picktrace.com/privacy/
+- type: TermsOfService
+  url: https://picktrace.com/terms/
+- type: Login
+  url: https://app.picktrace.com/
+- type: GitHubOrganization
+  url: https://github.com/picktrace
+- type: LinkedIn
+  url: https://www.linkedin.com/company/picktrace
