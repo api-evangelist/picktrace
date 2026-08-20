@@ -51,6 +51,17 @@ tags:
 - Time Tracking
 - Payroll
 - Piecework
+tags_raw:
+- Company
+- Agriculture
+- AgTech
+- Workforce Management
+- Labor Tracking
+- Farm Management
+- Harvest Management
+- Time Tracking
+- Payroll
+- Piecework
 - API
 apis:
 - name: PickTrace API
